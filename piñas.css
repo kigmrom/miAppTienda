@@ -1,0 +1,178 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Negro */
+    color: #fff; /* Texto blanco */
+    line-height: 1.6;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #ddd; /* Texto plateado */
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #FFD700; /* Dorado al hacer hover */
+}
+
+header h1 {
+    color: #FFD700; /* Dorado */
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Estilos para el contenido principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2c2c2c; /* Fondo oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+main h2 {
+    color: #ffd900; /* Dorado */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ddd; /* Texto plateado */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección de tipos */
+#tipos {
+    margin-top: 40px;
+}
+
+#tipos h2 {
+    color: #FFD700; /* Dorado */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#tipos ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tipos li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para la sección de beneficios */
+#beneficios {
+    margin-top: 40px;
+}
+
+#beneficios h2 {
+    color: #FFD700; /* Dorado */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#beneficios p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de recetas */
+#recetas {
+    margin-top: 40px;
+}
+
+#recetas h2 {
+    color: #FFD700; /* Dorado */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#recetas p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Estilos para el aside */
+aside {
+    text-align: center;
+    background-color: #FFD700; /* Dorado */
+    padding: 20px;
+    color: #333; /* Texto negro */
+}
+
+aside h2 {
+    color: #333; /* Texto negro */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #333; /* Texto negro */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #ddd; /* Texto plateado al hacer hover */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    background-color: #FFD700; /* Dorado */
+    padding: 20px 0;
+    color: #333; /* Texto negro */
+}
+
+/* Enlaces generales */
+a {
+    color: #FFD700; /* Dorado */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ddd; /* Texto plateado al hacer hover */
+}
