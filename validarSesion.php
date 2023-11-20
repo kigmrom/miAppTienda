@@ -4,8 +4,12 @@ include 'conexion.php';
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 
-$query = "SELECT * FROM usuario WHERE nombreUsuario='$usuario' AND contraseña='$contrasena'";
-$result = $conn->query($query);
+// Utilizar una consulta preparada para evitar SQL injection
+$query = "SELECT * FROM usuario WHERE nombreUsuario=? AND contraseña=?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("ss", $usuario, $contrasena);
+$stmt->execute();
+$result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
@@ -19,5 +23,6 @@ if ($result->num_rows > 0) {
     echo "Usuario o contraseña incorrectos.";
 }
 
+$stmt->close();
 $conn->close();
 ?>
